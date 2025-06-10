@@ -1,38 +1,68 @@
-import './App.css';
-import { FiRepeat } from 'react-icons/fi';
-import { useState } from 'react';
+import React from "react";
+import FlipCard from "./FlipCard";
+import "./App.css";
+
+import bg from './assets/bg.png';
+import bg1 from './assets/bg1.png';
+import bg2 from './assets/bg2.png';
+
+const frontTexts = [
+  "Offensive Term In Video Game",
+  "Image From Pocahontas Movie",
+  "Photograph From Orange Shirt Day",
+  "Taste the Flavors of Switzerland",
+  "Explore Switzerland's Hidden Gems",
+  "Unwind by Switzerland's Scenic Lakes",
+  "Journey Through Switzerland's Majestic Landscapes"
+];
+const backTexts = [
+  "Lack of understanding and a refusal to change",
+  "Misrepresentation isn’t always obvious",
+  "Adventure Awaits in the Swiss Alps",
+  "Taste the Flavors of Switzerland",
+  "Explore Switzerland's Hidden Gems",
+  "Unwind by Switzerland's Scenic Lakes",
+  "Journey Through Switzerland's Majestic Landscapes"
+];
+const imageUrls = [
+  bg1,
+  bg2,
+  bg,
+  bg,
+  bg,
+  bg,
+  bg,
+];
+
+// Define how many cards per row
+const rows = [1, 3, 2, 1];
 
 function App() {
-  const [isFlipped, setIsFlipped] = useState(false);
+  // Split the cards into groups based on rows array
+  let startIndex = 0;
+  const cardRows = rows.map((count) => {
+    const rowCards = frontTexts.slice(startIndex, startIndex + count);
+    startIndex += count;
+    return rowCards;
+  });
 
   return (
     <div className="App">
-      <div className={`card ${isFlipped ? 'flipped' : ''}`}>
-        <div className="cardInner">
-          {/* Front side */}
-          <div 
-            className="cardFront"
-            onClick={() => setIsFlipped(!isFlipped)} 
-            title="Flip card back"
-          >
-            <div className="cardContent">
-              <p className="cardHeader">Find The Best Places In Switzerland</p>
-              <FiRepeat className="cardIcon" />
-            </div>
-          </div>
-          {/* Back side */}
-          <div 
-            className="cardBack"
-            onClick={() => setIsFlipped(false)} 
-            title="Flip card back"
-          >
-            <div className="cardContent">
-              <p className="cardHeader">Explore mountains, lakes & cities!</p>
-              <FiRepeat className="cardIcon" />
-            </div>
-          </div>
+      {cardRows.map((rowCards, rowIndex) => (
+        <div className="cardRow" key={rowIndex}>
+          {rowCards.map((_, i) => {
+            const index = rows.slice(0, rowIndex).reduce((a, b) => a + b, 0) + i;
+            return (
+              <FlipCard
+                key={index}
+                frontText={frontTexts[index]}
+                backText={backTexts[index]}
+                imgUrl={imageUrls[index]}
+              />
+            );
+          })}
         </div>
-      </div>
+      ))}
     </div>
   );
 }
