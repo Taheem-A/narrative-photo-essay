@@ -5,6 +5,7 @@ import "./App.css";
 import bg from './assets/bg.png';
 import bg1 from './assets/bg1.png';
 import bg2 from './assets/bg2.png';
+// Importing the others later
 
 const frontTexts = [
   "Offensive Term In Video Game",
@@ -28,6 +29,7 @@ const imageUrls = [
   bg1,
   bg2,
   bg,
+  // Placeholders
   bg,
   bg,
   bg,
@@ -58,6 +60,7 @@ function App() {
                 frontText={frontTexts[index]}
                 backText={backTexts[index]}
                 imgUrl={imageUrls[index]}
+                index={index}
               />
             );
           })}
