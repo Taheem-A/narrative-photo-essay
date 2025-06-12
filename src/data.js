@@ -1,3 +1,40 @@
+import bg1 from './assets/bg1.png';
+import bg2 from './assets/bg2.png';
+import bg3 from './assets/bg3.png';
+import bg4 from './assets/bg4.png';
+import bg5 from './assets/bg5.png';
+import bg6 from './assets/bg6.png';
+import bg7 from './assets/bg7.png';
+
+const frontTexts = [
+  "Offensive Term In Video Game",
+  "Image From Pocahontas Movie",
+  "Photograph On Orange Shirt Day",
+  "Dreamcatcher Product from Social Media",
+  "Turtle Drawing On Highway Barrier",
+  "Totem Pole from Ajax Community Centre",
+  "Artwork by David Beaucage Johnson"
+];
+const backTexts = [
+  "Lack of understanding and a refusal to change.",
+  "Misrepresentation is not always obvious.",
+  "Reconciliation requires action, not just remembrance.",
+  "Appropriation is not always intentional.",
+  "The turtle was always there. What changed was me.",
+  "Silence can lead to erasure.",
+  "Reconciliation is more than just grieving the past."
+];
+
+const imageUrls = [
+  bg1,
+  bg2,
+  bg3,
+  bg4,
+  bg5,
+  bg6,
+  bg7,
+];
+
 const essayTexts = [
     `\t\tI took this photo while playing an online video game. I had just joined an online lobby when I noticed another player whose username was the E-word. At first, I did not think much of it, but later that week, we read Just Don’t Call Us Late for Supper by Chelsea Vowel, and I realized that their username was offensive and disrespectful. That is when I decided to go back and screenshot it, and use it for this project. This photo is about recognizing how deeply embedded these kinds of offensive terms are still being used in our daily lives, even in areas like video games.\n\n\t\tChelsea Vowel, in her essay Just Don’t Call Us Late For Supper, writes, “Inuit has pretty well replaced Eskimo in regular parlance here in Canada, and using Eskimo here is probably going to get you dirty looks.” This directly addresses why this term is no longer acceptable, especially in a Canadian context. What stood out to me is that people are still using this term, although it is no longer appropriate and is considered disrespectful. She also made it clear that the use of this term is more than just outdated; it demonstrates a lack of understanding and a refusal to change. This relationship between the offensive username and Vowel’s writing taught me that language is never harmless. It influences how we see people and groups, and when used incorrectly, it can create or even reinforce stereotypes. I realized that although it is just a username, it could be a part of a larger issue, where Indigenous peoples are still being misrepresented or mistreated.\n\n\t\tThis photo represents the first moment I began to think critically about how Indigenous people are represented. Before this, I had never considered how terms used in everyday media could be offensive or disrespectful. Seeing this username made me pause and think about why it was so important. This was the spark that began my journey. It made me realize how much I did not know, and how easily harm can occur silently, through words or names. This was my starting point, and from there, I began to ask more questions, be more careful, and consider how I could be more respectful of language and understanding.`,
     `\t\tI took this photo of the Disney movie Pocahontas while rewatching scenes for this project. At first, I dismissed it as simply another childhood film that I remembered enjoying. However, after learning more about the true story of Pocahontas during class and reading about how her story has been distorted and “Disney-fied,” I realized how inaccurate and harmful this portrayal is. The film romanticizes and fictionalizes a real historical figure, removing the truth of her experience in favour of a more acceptable and “happy” version. This photograph depicts how the media can distort history and shape our understanding of Indigenous people, especially when it is done through entertainment.\n\n\t\tIn a reading about the real Pocahontas, Karen Ordahl Kupperman says, “In the modern retelling, she’s not a 10-year-old girl—she’s a sex object.” This really stood out to me because it shows how far the Disney version is from the truth. The real Pocahontas was a child who played an important political role, not a romantic love story. I had never questioned the film before as I had no knowledge, but now I understand how damaging it is when history is changed in this way. It is not just a harmless cartoon; it is a form of misrepresentation that replaces truth with myth, erasing Indigenous people’s true contributions and struggles. Kupperman’s words taught me that when stories are told incorrectly, they can have long-lasting consequences, especially when they are exposed to children, who have no knowledge of the truth.\n\n\t\tThis photograph represents the next step in my learning. After noticing the offensive language in the video game, I started to pay more attention to how Indigenous people are shown in the media. The Disney version of Pocahontas made me realize that misrepresentation is not always obvious, as it can be hidden in familiar stories, movies, and characters we grew up with. It pushed me to question how often Indigenous voices are missing in mainstream storytelling, and how important it is to go beyond the surface to understand the real history.`,
@@ -19,4 +56,4 @@ const urls = [
     "https://www.aptnnews.ca/national-news/chippewa-artist-jay-soule-uses-buffalo-skulls-to-make-his-point-at-toronto-exhibit/"
 ];
 
-export { essayTexts, urls };
+export { frontTexts, backTexts, imageUrls, essayTexts, urls };
