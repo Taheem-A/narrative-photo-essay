@@ -26,7 +26,7 @@ const backTexts = [
   "Appropriation is not always intentional or obvious.",
   "The turtle was always there. What changed was me.",
   "Silence can lead to erasure.",
-  "reconciliation is more than just grieving the past."
+  "Reconciliation is more than just grieving the past."
 ];
 const imageUrls = [
   bg1,
