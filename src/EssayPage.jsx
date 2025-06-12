@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './essayPage.css';
-import essayTexts from './essayTexts.js';
+import { essayTexts, urls } from './data.js';
 
 const EssayPage = () => {
   const { state } = useLocation();
@@ -11,6 +11,7 @@ const EssayPage = () => {
 
   const { frontText, backText, imgUrl, index } = state;
   const fullEssay = essayTexts[index];
+  const url = urls[index];
 
   return (
     <div className="essayPage">
@@ -23,6 +24,11 @@ const EssayPage = () => {
           <p className="essayText" style={{ whiteSpace: 'pre-wrap' }}>{fullEssay}</p>
         </div>
       </div>
+      <footer className="footer">
+        <p>
+          Source: <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+        </p>
+      </footer>
     </div>
   );
 };

@@ -9,4 +9,14 @@ const essayTexts = [
 \t\tBefore starting this project, I did not think much about reconciliation beyond headlines and school assemblies. I saw it as something distant: a political or historical issue in which I had no involvement. But as I engaged with Indigenous stories, symbols, and voices, I realized how much I had overlooked. I realized that reconciliation is not a passive process; it is uncomfortable, emotional, and often deeply personal. It involves asking myself why I skipped over the totem pole near my community center, or why I never challenged the stereotypes in the media. It involves dealing with feelings of guilt and ignorance without rushing to resolve them or turning away. Freedom represents that shift in me.  It represents not only Indigenous peoples' strength, but also a new responsibility on my part, to listen more carefully, question more critically, and acknowledge the presence of cultures I previously ignored. This painting represents a watershed moment in my journey: I no longer see reconciliation as something abstract. I see it as something that begins with awareness, grows with truth, and culminates in action through everyday choices, whether it be how I speak, what I question, and whose stories I choose to elevate.\n\n\t\tFreedom reminds me that we are all part of that process, and that the most powerful forms of reconciliation begin when we choose to see, to feel, and to change.`
 ];
 
-export default essayTexts;
+const urls = [
+    "https://www.mcgill.ca/walkingalongside/files/walkingalongside/indigenous_writes_a_guide_to_first_nations_metis._-_part_1_the_terminology_of_relationships.pdf",
+    "https://www.futurity.org/pocahontas-history-2022892-2/",
+    "https://www.ttbook.org/interview/how-land-back-movement-reclaiming-land-stolen-indigenous-people/",
+    "https://cottagelife.com/general/the-difference-between-cultural-appreciation-and-appropriation/",
+    "https://klemtu.com/",
+    "https://www.pbs.org/wgbh/roadshow/articles/understanding-totem-poles/",
+    "https://www.aptnnews.ca/national-news/chippewa-artist-jay-soule-uses-buffalo-skulls-to-make-his-point-at-toronto-exhibit/"
+];
+
+export { essayTexts, urls };
